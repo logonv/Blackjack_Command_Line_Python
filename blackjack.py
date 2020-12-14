@@ -167,7 +167,7 @@ while True:
         
     while playerhaschips==True:
         while playerhasbet==False:
-            print("Player has "+str(user.chips)+"chips.\n")
+            print("Player has "+str(user.chips)+" chips.\n")
             if user.chips==0:
                 playerhaschips=False
                 break
@@ -186,8 +186,10 @@ while True:
             dealerhand.add(carddeck.deal())
             playerhand.add(carddeck.deal())
             dealerhand.add(carddeck.deal())
-            playerhand.add(carddeck.deal())
-            print(showdealerhand(dealerhand))
+            playerhand.add(carddeck.deal())            
+            print("The dealer's hand is:")
+            print(showdealerhand(dealerhand))            
+            print(user.name+"'s hand is:")
             print(showhand(playerhand))
             hit=input("Would you like to get another card? Yes or no \n")
             hit=hit.strip()
