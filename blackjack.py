@@ -115,7 +115,7 @@ def showdealerhand(hand):
     cardlist=[]
     for card in hand:
         cardlist.append(card)
-    return str(cardlist[0])+" other card is hidden"
+    return str(cardlist[0])+". Other card is hidden"
 
 def totalhand(hand):
     total=0
